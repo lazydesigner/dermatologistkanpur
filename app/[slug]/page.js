@@ -156,7 +156,7 @@ export default async function BlogPostPage({ params }) {
             {/* Category Badge */}
             <div className="mb-6">
               <span className="px-4 py-2 bg-primary text-white rounded-full text-sm font-medium">
-                {post.categories[0]}
+                {post.categories?.[0]}
               </span>
             </div>
 

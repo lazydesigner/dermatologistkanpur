@@ -48,7 +48,7 @@ export default function RelatedPosts({ currentPost }) {
                 />
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-primary text-white rounded-full text-sm font-medium">
-                    {post.categories[0]}
+                    {post.categories?.[0]}
                   </span>
                 </div>
               </div>

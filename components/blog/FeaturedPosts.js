@@ -101,7 +101,7 @@ export default  function FeaturedPosts({ featuredPosts }) {
                             transition={{ duration: 0.6, delay: 0.3 }}
                             className="inline-block px-4 py-2 bg-purple-600/20 backdrop-blur-sm rounded-full text-sm font-medium mb-4"
                           >
-                            {featuredPosts[currentSlide].categories[0]}
+                            {featuredPosts[currentSlide].categories?.[0]}
                           </motion.span>
                         )} 
 

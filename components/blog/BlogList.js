@@ -20,14 +20,14 @@ export default function BlogList({BLOG_POSTS}) {
 
   const categories = [
     { id: 'all', name: 'All Posts', count: BLOG_POSTS.length },
-    { id: 'Skincare', name: 'Skincare', count: BLOG_POSTS.filter(post => post.categories[0] === 'Skincare').length },
-    { id: 'Hair Care', name: 'Hair Care', count: BLOG_POSTS.filter(post => post.categories[0] === 'Hair Care').length },
-    { id: 'Treatments', name: 'Treatments', count: BLOG_POSTS.filter(post => post.categories[0] === 'Treatments').length }
+    { id: 'Skincare', name: 'Skincare', count: BLOG_POSTS.filter(post => post.categories?.[0] === 'Skincare').length },
+    { id: 'Hair Care', name: 'Hair Care', count: BLOG_POSTS.filter(post => post.categories?.[0] === 'Hair Care').length },
+    { id: 'Treatments', name: 'Treatments', count: BLOG_POSTS.filter(post => post.categories?.[0] === 'Treatments').length }
   ]
 
   const filteredPosts = selectedCategory === 'all' 
     ? BLOG_POSTS 
-    : BLOG_POSTS.filter(post => post.categories[0] === selectedCategory)
+    : BLOG_POSTS.filter(post => post.categories?.[0] === selectedCategory)
 
   const displayedPosts = filteredPosts.slice(0, visiblePosts)
 
@@ -92,7 +92,7 @@ export default function BlogList({BLOG_POSTS}) {
                 />
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-primary text-white rounded-full text-sm font-medium">
-                    {post.categories[0]}
+                    {post.categories?.[0]}
                   </span>
                 </div>
               </div>
