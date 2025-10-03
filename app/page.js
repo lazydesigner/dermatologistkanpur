@@ -10,6 +10,7 @@ import { SITE_CONFIG } from '@/lib/constants'
 import Post from '@/models/Post';
 import dbConnect from '@/lib/dbConnect';
  
+export const dynamic = "force-dynamic"
 
 export const metadata = {
   title: 'Blog - Dermatology Tips & Expert Advice',
