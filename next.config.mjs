@@ -48,45 +48,10 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
   poweredByHeader: false,
-  reactStrictMode: true,
-  swcMinify: true,
+  reactStrictMode: true, 
   // Enable static exports if needed
   // output: 'export',
-  // trailingSlash: true,
-  
-  // Optional: Configure redirects
-  async redirects() {
-    return [
-      {
-        source: '/home',
-        destination: '/',
-        permanent: true,
-      },
-    ]
-  },
-
-  // Optional: Configure headers for security
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: [
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin',
-          },
-        ],
-      },
-    ]
-  },
+  // trailingSlash: true,  
 }
 
 export default nextConfig;
