@@ -70,7 +70,7 @@ export default function ServicesHero() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
             >
-              Best Skin Specialist in {' '}
+              Best Dermatologist in{' '}
               <span className="gradient-text">kanpur</span>
             </motion.h1>
  
@@ -81,7 +81,7 @@ export default function ServicesHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto lg:mx-0"
-            >Looking for the Best Skin Specialist in Kanpur? Visit Skin World Clinic by Dr. R M Singh for expert skin, hair, and laser treatments. Book your appointment today!
+            >Searching for the best dermatologist in Kanpur? Visit Skin World Clinic, led by Dr. R M Singh, for expert skin, hair, and cosmetic treatments. Book your appointment today!
             </motion.p>
 
             {/* CTA Buttons */}

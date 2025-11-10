@@ -15,28 +15,29 @@ import dbConnect from '@/lib/dbConnect';
 export const dynamic = "force-dynamic"
 
 export const metadata = {
-  title: 'Best Skin Specialist in Kanpur | Dr. R M Singh | Skin World Clinic',
+  title: 'Best Dermatologist in Kanpur | Dr. R M Singh | Skin World Kanpur',
   description:
-    'Looking for the Best Skin Specialist in Kanpur? Visit Skin World Clinic by Dr. R M Singh for expert skin, hair, and laser treatments. Book your appointment today!',
+    'Searching for the best dermatologist in Kanpur? Visit Skin World Clinic, led by Dr. R M Singh, for expert skin, hair, and cosmetic treatments. Book your appointment today!',
   keywords:
-    'Best Skin Specialist in Kanpur, top dermatologist Kanpur, skin doctor Kanpur, Dr. R M Singh, Skin World Clinic Kanpur, hair and skin treatment Kanpur',
+    'best dermatologist in Kanpur, top skin specialist in Kanpur, dermatologist near me Kanpur, Dr. R M Singh Kanpur, skin doctor Kanpur, skin world Kanpur, dermatologist Swaroop Nagar Kanpur',
   openGraph: {
-    title: 'Best Skin Specialist in Kanpur | Dr. R M Singh | Skin World Clinic',
+    title: 'Best Dermatologist in Kanpur | Dr. R M Singh | Skin World Kanpur',
     description:
-      'Trusted by thousands, Dr. R M Singh offers advanced skin, hair, and cosmetic solutions at Skin World Clinic — the best dermatology center in Kanpur.',
-    url: 'https://skinspecialistsinkanpur.in/',
+      'Get expert skin and hair care from Dr. R M Singh — the best dermatologist in Kanpur at Skin World Clinic. Personalized treatments for all your skin concerns.',
+    url: 'https://kanpurdermatologist.com/',
     type: 'website',
     images: [
       {
-        url: 'https://skinspecialistsinkanpur.in/images/skin-specialist-kanpur.jpg',
-        alt: 'Dr. R M Singh - Best Skin Specialist in Kanpur',
+        url: 'https://kanpurdermatologist.com/images/skinworld-kanpur.jpg',
+        alt: 'Dr. R M Singh - Best Dermatologist in Kanpur',
       },
     ],
   },
   alternates: {
-    canonical: 'https://skinspecialistsinkanpur.in/',
+    canonical: 'https://kanpurdermatologist.com/',
   },
 };
+
 
 
  
@@ -70,11 +71,11 @@ export default async  function BlogPage() {
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
-      "name": "Skin World Clinic",
-      "image": "https://skinspecialistsinkanpur.in/images/skin-specialist-kanpur.jpg",
-      "@id": "https://skinspecialistsinkanpur.in/",
-      "url": "https://skinspecialistsinkanpur.in/",
-      "telephone": "+91-9936959955",
+      "name": "Skin World Kanpur",
+      "image": "https://kanpurdermatologist.com/images/skinworld-kanpur.jpg",
+      "@id": "https://kanpurdermatologist.com/",
+      "url": "https://kanpurdermatologist.com/",
+      "telephone": "+919936959955",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
@@ -93,30 +94,26 @@ export default async  function BlogPage() {
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
+            "Monday",
             "Tuesday",
             "Wednesday",
             "Thursday",
             "Friday",
-            "Saturday",
-            "Sunday"
+            "Saturday"
           ],
           "opens": "10:00",
           "closes": "19:00"
         }
       ],
-      "department": {
-        "@type": "MedicalSpecialty",
-        "name": "Dermatology"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "250"
-      },
       "medicalSpecialty": "Dermatology",
       "founder": {
         "@type": "Person",
         "name": "Dr. R M Singh"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "245"
       },
       "sameAs": [
         "https://www.facebook.com/SkinWorldKanpur/",
@@ -126,6 +123,7 @@ export default async  function BlogPage() {
     }),
   }}
 />
+
 
 
       <Header />
