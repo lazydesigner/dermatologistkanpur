@@ -15,71 +15,30 @@ import dbConnect from '@/lib/dbConnect';
 export const dynamic = "force-dynamic"
 
 export const metadata = {
-  title: 'Best Dermatologist in Kanpur | Dr. R M Singh | Skin World Clinic',
+  title: 'Skin Doctor in Kanpur | Dr. R M Singh | Skin World Clinic',
   description:
-    'Looking for the best dermatologist in Kanpur? Consult Dr. R M Singh at Skin World Clinic for advanced skin, hair, and laser treatments. Book your appointment today!',
+    'Looking for the best skin doctor in Kanpur? Visit Skin World Clinic by Dr. R M Singh for expert treatment in acne, hair loss, pigmentation, and cosmetic dermatology.',
   keywords:
-    'best dermatologist in Kanpur, top skin specialist in Kanpur, dermatologist near me Kanpur, Dr. R M Singh dermatologist, skin clinic Kanpur, hair and skin treatment Kanpur',
+    'skin doctor in Kanpur, dermatologist in Kanpur, skin specialist Kanpur, Dr. R M Singh, Skin World Clinic Kanpur, best dermatologist near me',
   openGraph: {
-    title: 'Best Dermatologist in Kanpur | Dr. R M Singh | Skin World Clinic',
+    title: 'Skin Doctor in Kanpur | Dr. R M Singh | Skin World Clinic',
     description:
-      'Get expert care from Dr. R M Singh — the best dermatologist in Kanpur, offering skin, hair, and cosmetic treatments at Skin World Clinic.',
-    url: SITE_CONFIG.url + '',
+      'Consult Dr. R M Singh, one of the top dermatologists in Kanpur at Skin World Clinic. Expert care for skin, hair, and cosmetic issues.',
+    url: 'https://skindoctorinkanpur.com/',
     type: 'article',
     images: [
       {
-        url: SITE_CONFIG.url + '/images/dermatologist-kanpur.jpg',
-        alt: 'Dr. R M Singh - Best Dermatologist in Kanpur',
+        url: 'https://skindoctorinkanpur.com/images/skin-doctor-kanpur.jpg',
+        alt: 'Dr. R M Singh - Skin Doctor in Kanpur',
       },
     ],
   },
   alternates: {
-    canonical: SITE_CONFIG.url + '',
+    canonical: 'https://skindoctorinkanpur.com/',
   },
 };
 
-const schemaData = {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Skin World Clinic",
-    "image": "https://yourdomain.com/images/dermatologist-kanpur.jpg",
-    "@id": "dermatologistkanpur.in",
-    "url": "dermatologistkanpur.in",
-    "telephone": "+91-9936959955",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "113/131 Swaroop Nagar (Near Madhuraj hospital), Kanpur, U.P. 208002",
-      "addressLocality": "Kanpur",
-      "addressRegion": "UP",
-      "postalCode": "208002",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 26.4607,
-      "longitude": 80.3218
-    },
-    "openingHours": "Mo-Sa 10:00-19:00",
-    "department": {
-      "@type": "MedicalSpecialty",
-      "name": "Dermatology"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "245"
-    },
-    "medicalSpecialty": "Dermatology",
-    "founder": {
-      "@type": "Person",
-      "name": "Dr. R M Singh"
-    },
-    "sameAs": [
-      "https://www.facebook.com/skinworldkanpur",
-      "https://www.instagram.com/skin.worldkanpur"
-    ]
-  };
+ 
 
 
 async function getPosts() {
@@ -104,10 +63,65 @@ export default async  function BlogPage() {
   const BLOG_POSTS = await getAllPosts()  
   return (
     <>
-    <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-      />
+   <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Skin World Clinic",
+      "image": "https://skindoctorinkanpur.com/images/skin-doctor-kanpur.jpg",
+      "@id": "https://skindoctorinkanpur.com/",
+      "url": "https://skindoctorinkanpur.com/",
+      "telephone": "+91-9936959955",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "113/209, near Madhuraj Hospital, Khalasi Line, Swaroop Nagar",
+        "addressLocality": "Kanpur",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "208002",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.4607,
+        "longitude": 80.3218
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ],
+      "medicalSpecialty": "Dermatology",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. R M Singh"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "250"
+      },
+      "sameAs": [
+        "https://www.facebook.com/SkinWorldKanpur/",
+        "https://www.instagram.com/skin.world.dermatology/",
+        "https://www.youtube.com/@SkinWorldKanpur"
+      ]
+    }),
+  }}
+/>
+
       <Header />
       <main id="main-content" className="flex-1">
         <ServicesHero />
