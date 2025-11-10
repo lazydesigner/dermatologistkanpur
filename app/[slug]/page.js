@@ -230,7 +230,7 @@ export default async function BlogPostPage({ params }) {
 
                 {/* Article Body */}
                 <div 
-                  className="prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-strong:text-gray-900 prose-a:text-primary hover:prose-a:text-primary-dark"
+                  className="custom-css prose prose-lg max-w-none prose-headings:text-gray-900 prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-strong:text-gray-900 prose-a:text-primary hover:prose-a:text-primary-dark"
                   dangerouslySetInnerHTML={{ __html: currentContent.content }}
                 />
 

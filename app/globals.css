@@ -128,3 +128,134 @@ body {
     display: none !important;
   }
 }
+
+.custom-css h1{
+  font-size: 2.5rem;
+  line-height: 45px;
+}
+
+.custom-css h2{
+  font-size: 2rem;
+  line-height: 36px;
+  margin: 2% 0;
+}
+
+.custom-css h3{
+  font-size: 1.5rem;
+  line-height: 32px;
+  margin: 2% 0;
+}
+
+.custom-css h4{
+  font-size: 1.25rem;
+  line-height: 32px;
+  margin: 2% 0;
+}
+
+.custom-css p{
+  font-size: 1.1rem;
+  line-height: 25px;
+  margin: 1% 0;
+}
+
+.custom-css li{
+  font-size: 1.1rem;
+  line-height: 25px;
+  margin: 0.5% 0;
+}
+
+.custom-css a{
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+.custom-css blockquote{
+  border-left: 4px solid #007BFF;
+  padding-left: 1rem;
+  color: #555555;
+  margin: 1% 0;
+}
+
+.custom-css code{
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+}
+
+.custom-css pre{
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  margin: 1% 0;
+}
+
+.custom-css hr{
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 2% 0;
+}
+
+.custom-css img{
+  max-width: 100%;
+  height: auto;
+  margin: 1% 0;
+}
+
+.custom-css table{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1% 0;
+}
+.custom-css th, .custom-css td{
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem;
+  text-align: left;
+}
+.custom-css th{
+  background-color: #181717;
+  color: #fff;
+}
+.custom-css tbody tr:nth-child(odd){
+  background-color: #f5f5f5;
+}
+.custom-css tbody tr:hover{
+  background-color: #e0e0e0;
+}
+.custom-css ul, .custom-css ol{
+  padding-left: 1.5rem;
+  list-style: disc;
+  margin: 1% 0;
+}
+.custom-css strong{
+  font-weight: 600;
+}
+.custom-css em{
+  font-style: italic;
+}
+.custom-css a:hover{
+  color: #0056b3;
+}
+.custom-css blockquote p{
+  margin: 0;
+}
+.custom-css pre code{
+  background-color: transparent;
+  padding: 0;
+}
+.custom-css table th, .custom-css table td{
+  font-size: 1rem;
+  line-height: 24px;
+}
+.custom-css table th{
+  font-weight: 600;
+}
+.custom-css table td{
+  font-weight: 400;
+}
+
+

@@ -61,13 +61,13 @@ export default function Header() {
                               width={30}
                               height={30}
                             />
-              <motion.h1 
+              <motion.p 
                 className="ml-1 text-2xl md:text-3xl font-bold gradient-text hover-scale"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
                 {SITE_CONFIG.name}
-              </motion.h1>
+              </motion.p>
             </Link>
 
             {/* Desktop Navigation */}
