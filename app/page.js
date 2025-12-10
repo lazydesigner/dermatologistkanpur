@@ -36,11 +36,7 @@ export const metadata = {
   alternates: {
     canonical: 'https://kanpurdermatologist.com/',
   },
-};
-
-
-
- 
+}; 
 
 
 async function getPosts() {
